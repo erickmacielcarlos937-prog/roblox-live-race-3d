@@ -1,0 +1,11 @@
+{
+  "name": "roblox-live-race-3d",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Protótipo de corrida interativa 3D para lives",
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}

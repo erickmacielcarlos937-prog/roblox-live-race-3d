@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ROBLOX LIVE RACE 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><div><b>ROBLOX LIVE RACE 3D</b><small>Corrida interativa para lives</small></div><span id="status">Conectando...</span></header>
+  <main>
+    <section class="track">
+      <div class="sky"></div><div class="sun"></div>
+      <div class="trees"></div>
+      <div class="road"><div class="start">LARGADA</div><div class="finish">CHEGADA</div></div>
+      <div class="lane-lines"></div>
+      <div id="runners"></div>
+    </section>
+    <section class="panel">
+      <h2>Entrar na corrida</h2>
+      <p>Digite seu nome de jogador para entrar no protótipo.</p>
+      <form id="joinForm"><input id="playerName" maxlength="20" placeholder="Seu nome no Roblox" required><button>ENTRAR</button></form>
+      <div class="admin"><button id="start">INICIAR CORRIDA</button><button id="reset" class="secondary">REINICIAR</button></div>
+      <h2>Classificação</h2><ol id="ranking"><li>Aguardando jogadores...</li></ol>
+      <p class="hint">Protótipo: a movimentação de teste é feita pelo botão de corrida após entrar. A conexão automática com comentários do TikTok ainda precisa ser configurada separadamente.</p>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
